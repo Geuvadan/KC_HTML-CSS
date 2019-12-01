@@ -29,7 +29,41 @@
     </nav>
 
     <main class="main">
-      <section class="login">Log In</section>
+      <section class="welcome">
+        <div class="welcome-msg">
+          <h1>Bienvenido a Viewflix</h1>
+        </div>
+        <div class="login">
+          <h2>¿Qué te apetece ver hoy?</h2>
+          <p>
+            Si ya dispones de cuenta, entra! Si no, a qué esperas para
+            <a href="#registro">registrarte</a>
+          </p>
+          <form id="login-form" class="login-form" action="./home.html">
+            <p>
+              <label for="login-user">Usuario: </label>
+              <input
+                type="email"
+                name="email"
+                id="login-user"
+                placeholder="nombre@usuario.com"
+              />
+            </p>
+            <p>
+              <label for="login-password">Contraseña: </label>
+              <input
+                type="password"
+                name="password"
+                id="login-password"
+                placeholder="Contraseña"
+              />
+            </p>
+            <p>
+              <button type="submit">Entrar!</button>
+            </p>
+          </form>
+        </div>
+      </section>
       <aside class="promo">Pelis promo</aside>
     </main>
 

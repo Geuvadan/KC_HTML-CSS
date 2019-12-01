@@ -1,22 +1,75 @@
 .main {
   margin-top: 80px;
-  background-color: #393e46;
+  background: url("http://lorempixel.com/400/200/nightlife") no-repeat;
+  background-size: cover;
   height: calc(100vh - 130px);
   width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
-.main > .login {
-  height: 50vh;
-  background-color: #fff;
-  width: 100vw;
+.main > .welcome {
+  height: 65%;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+}
+
+.main > .welcome > .welcome-msg {
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+  margin: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid grey;
+  justify-content: center;
+  align-items: center;
+}
+
+.main > .welcome > .login {
+  /* eight: 65%; */
+  display: grid;
+  margin: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid grey;
+  max-width: 380px;
+}
+
+.main > .welcome > .login > .login-form {
+  display: grid;
+  align-content: space-around;
+  border: 1px solid grey;
+}
+
+.login-form label {
+  display: inline-block;
+  width: 30%;
+}
+
+.login-form input {
+  display: inline-block;
+  width: 65%;
+  box-shadow: 1px 1px 1px #888;
+}
+
+.login-form button {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  border: 0;
+  box-shadow: 1px 1px 3px blue;
+  padding: 0.5rem;
+  min-width: 10rem;
+  background-color: deepskyblue;
+  background: linear-gradient(to right, #ccddee, #6dd5f9);
 }
 
 .main > .promo {
-  height: 50vh;
+  height: 35%;
   background-color: grey;
   width: 100vw;
 }
