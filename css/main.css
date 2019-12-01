@@ -12,6 +12,7 @@
 
 .main > .welcome {
   background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
   padding: 1rem;
 }
 
@@ -21,6 +22,7 @@
   margin: 0.5rem;
   padding: 0.5rem 0.5rem;
   background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
   max-width: 380px;
   gap: 1rem;
   text-align: center;
@@ -66,6 +68,7 @@
   display: inline-block;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
   padding: 1rem;
 }
 
@@ -83,4 +86,16 @@
   margin-right: 0.5rem;
   background-color: grey;
   flex: 0 0 auto;
+}
+
+@media all and (min-width: 480px) {
+}
+
+@media all and (min-width: 768px) {
+}
+
+@media all and (min-width: 992px) {
+}
+
+@media all and (min-width: 1200px) {
 }
