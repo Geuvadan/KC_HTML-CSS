@@ -33,6 +33,12 @@
   color: #00adb5;
 }
 
+@media all and (min-height: 735px) {
+  /* .footer {
+    position: relative;
+  } */
+}
+
 @media all and (min-width: 480px) {
 }
 
