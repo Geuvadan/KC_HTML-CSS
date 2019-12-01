@@ -6,43 +6,29 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
 .main > .welcome {
-  height: 65%;
-
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1rem;
 }
 
-.main > .welcome > .welcome-msg {
-  display: grid;
-  gap: 1rem;
-  text-align: center;
-  margin: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.7);
-  border: 1px solid grey;
-  justify-content: center;
-  align-items: center;
-}
-
-.main > .welcome > .login {
-  /* eight: 65%; */
+.main > .login {
+  /* height: 65%; */
   display: grid;
   margin: 0.5rem;
   padding: 0.5rem 0.5rem;
-  background-color: rgba(255, 255, 255, 0.7);
-  border: 1px solid grey;
+  background-color: rgba(255, 255, 255, 0.5);
   max-width: 380px;
+  gap: 1rem;
+  text-align: center;
 }
 
-.main > .welcome > .login > .login-form {
+.main > .login > .login-form {
   display: grid;
-  align-content: space-around;
-  border: 1px solid grey;
+  gap: 1rem;
 }
 
 .login-form label {
@@ -53,23 +39,48 @@
 .login-form input {
   display: inline-block;
   width: 65%;
+  height: 2.5rem;
   box-shadow: 1px 1px 1px #888;
 }
 
 .login-form button {
   display: block;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   border: 0;
-  box-shadow: 1px 1px 3px blue;
+  box-shadow: 1px 1px 3px #00adb5;
   padding: 0.5rem;
-  min-width: 10rem;
-  background-color: deepskyblue;
-  background: linear-gradient(to right, #ccddee, #6dd5f9);
+  background-color: #1d1d1f;
+  color: #00adb5;
+  font-size: large;
 }
 
 .main > .promo {
   height: 35%;
-  background-color: grey;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.main > .promo h2 {
+  display: inline-block;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1rem;
+}
+
+.main > .promo > .recently {
+  display: flex;
+  align-items: center;
+  overflow: scroll;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.main > .promo > .recently > .film {
+  width: 250px;
+  height: 141px;
+  margin-right: 0.5rem;
+  background-color: grey;
+  flex: 0 0 auto;
 }
