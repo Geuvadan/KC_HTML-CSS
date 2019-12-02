@@ -1,145 +1,150 @@
 .main {
-    margin-top: 80px;
-    margin-bottom: 50px;
-    background: url("http://lorempixel.com/400/200/nightlife") no-repeat;
-    background-size: cover;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  background: url("http://lorempixel.com/400/200/nightlife") no-repeat;
+  background-size: cover;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
-
 
 /* Sección WELOCOME */
 
-.main>.welcome {
-    background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 5px;
-    padding: 0.5rem 1rem;
-    margin-top: 0.5rem;
+.main > .welcome {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
 }
-
 
 /* Sección LOGIN */
 
-.main>.login {
-    display: grid;
-    margin: 0.5rem;
-    padding: 0.5rem 0.5rem;
-    background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 5px;
-    max-width: 380px;
-    gap: 1rem;
-    text-align: center;
-    text-shadow: 1px 1px 1px grey;
+.main > .login {
+  display: grid;
+  margin: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  max-width: 380px;
+  gap: 1rem;
+  text-align: center;
+  text-shadow: 1px 1px 1px grey;
 }
 
-.main>.login>.login-form {
-    display: grid;
-    gap: 1rem;
+.main > .login > .login-form {
+  display: grid;
+  gap: 1rem;
 }
 
 .login-form label {
-    display: inline-block;
-    width: 30%;
+  display: inline-block;
+  width: 30%;
 }
 
 .login-form input {
-    display: inline-block;
-    width: 65%;
-    height: 2.5rem;
-    box-shadow: 1px 1px 1px #888;
+  display: inline-block;
+  width: 65%;
+  height: 2.5rem;
+  box-shadow: 1px 1px 1px #888;
 }
 
 .login-form button {
-    display: block;
-    width: 80%;
-    margin: 0 auto;
-    border: 0;
-    box-shadow: 1px 1px 3px #00adb5;
-    padding: 0.5rem;
-    background-color: #1d1d1f;
-    color: #00adb5;
-    font-size: large;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  border: 0;
+  box-shadow: 1px 1px 3px #00adb5;
+  padding: 0.5rem;
+  background-color: #1d1d1f;
+  color: #00adb5;
+  font-size: large;
 }
 
-.login p>a {
-    color: #393e46;
-    text-decoration: none;
-    font-weight: 700;
+.login p > a {
+  color: #393e46;
+  text-decoration: none;
+  font-weight: 700;
 }
-
 
 /* Sección PROMO */
 
-.main>.promo {
-    height: 35%;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
+.main > .promo {
+  height: 35%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.main>.promo h2 {
-    display: none;
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 5px;
-    padding: 0.5rem 1rem;
+.main > .promo h2 {
+  display: none;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
 }
 
-.main>.promo>.recently {
-    display: flex;
-    align-items: center;
-    overflow: scroll;
-    padding: 0.5rem;
-    gap: 1rem;
+.main > .promo > .recently {
+  display: flex;
+  align-items: center;
+  overflow: scroll;
+  padding: 0.5rem;
+  gap: 1rem;
 }
 
-.main>.promo>.recently>.film {
-    width: 250px;
-    height: 141px;
-    margin-right: 0.5rem;
-    background-color: grey;
-    flex: 0 0 auto;
+.main > .promo > .recently > .film {
+  width: 250px;
+  height: 141px;
+  margin-right: 0.5rem;
+  background-color: grey;
+  flex: 0 0 auto;
 }
-
 
 /* Media query para controlar el alto en dispositivos con altura menor a 736px */
 
 @media all and (min-height: 736px) {
-    .main {
-        height: calc(100vh - 130px);
-        margin-bottom: 0;
-    }
-    .main>.promo h2 {
-        display: inline-block;
-        margin: 0 auto;
-        background-color: rgba(255, 255, 255, 0.4);
-        border-radius: 5px;
-        padding: 0.5rem 1rem;
-    }
+  .main {
+    height: calc(100vh - 130px);
+    margin-bottom: 0;
+  }
+  .main > .promo h2 {
+    display: inline-block;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+  }
 }
-
 
 /* Media queries en función del ancho del dispositivo */
 
 @media all and (min-width: 480px) {
-    .main>.login {
-        max-width: 480px;
-    }
+  .main > .login {
+    max-width: 480px;
+  }
 }
 
 @media all and (min-width: 768px) {
-    .main>.promo>.recently>.film {
-        width: 350px;
-        height: 197px;
-        margin-right: 0.5rem;
-        background-color: grey;
-        flex: 0 0 auto;
-    }
+  .main > .promo > .recently > .film {
+    width: 350px;
+    height: 197px;
+    margin-right: 0.5rem;
+    background-color: grey;
+    flex: 0 0 auto;
+  }
 }
 
-@media all and (min-width: 992px) {}
+@media all and (min-width: 992px) {
+  .main > .promo > .recently > .film {
+    width: 500px;
+    height: 281px;
+    margin-right: 0.5rem;
+    background-color: grey;
+    flex: 0 0 auto;
+  }
+}
 
-@media all and (min-width: 1200px) {}
+@media all and (min-width: 1200px) {
+}
