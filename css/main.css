@@ -137,12 +137,12 @@
 }
 
 @media all and (min-width: 992px) {
+  .main > .promo > .recently {
+    margin-top: 1rem;
+  }
   .main > .promo > .recently > .film {
     width: 500px;
     height: 281px;
-    margin-right: 0.5rem;
-    background-color: grey;
-    flex: 0 0 auto;
   }
 }
 
