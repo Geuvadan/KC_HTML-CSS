@@ -1,0 +1,92 @@
+.main {
+  margin-top: 80px;
+  display: grid;
+  grid-template-rows: 30vh 40vh 40vh 40vh;
+  gap: 3rem;
+}
+
+.main > .header {
+  border: 1px solid red;
+  margin-top: 1rem;
+}
+
+.main > .populares {
+  border: 1px solid blue;
+}
+
+.main > .peliculas {
+  border: 1px solid yellow;
+}
+
+.main > .series {
+  border: 1px solid green;
+}
+
+.main > .section-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "title"
+    "film1"
+    "film2"
+    "film3"
+    "film4"
+    "film5"
+    "film6"
+  ;
+  justify-items: center;
+  align-items: center;
+}
+
+.section-title {
+  grid-area: title;
+}
+
+.film1 {
+  grid-area: film1;
+}
+.film2 {
+  grid-area: film2;
+}
+.film3 {
+  grid-area: film3;
+}
+.film4 {
+  grid-area: film4;
+}
+.film5 {
+  grid-area: film5;
+}
+.film6 {
+  grid-area: film6;
+}
+
+@media all and (min-width: 480px) {
+}
+
+@media all and (min-width: 768px) {
+  .main > .section-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "title title"
+      "film1 film2"
+      "film3 film4"
+      "film5 film6";
+  }
+}
+
+@media all and (min-width: 992px) {
+  .main > .section-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "title title title"
+      "film1 film2 film3"
+      "film4 film5 film6";
+  }
+  }
+
+  
+}
+
+@media all and (min-width: 1200px) {
+}
