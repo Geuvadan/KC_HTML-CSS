@@ -6,15 +6,13 @@
   background-color: #1d1d1f;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   height: 80px;
-  /* padding-right: 1rem; */
   border-bottom: 1px solid #00adb5;
 }
 
 .navbar > .logo {
-  width: 100px;
   padding: 0 0.5rem;
+  flex-basis: 30%;
 }
 
 #menu-checkbox {
@@ -77,7 +75,7 @@
 .navbar > .signin {
   display: flex;
   align-items: center;
-  width: 100px;
+  flex-basis: 30%;
   justify-content: center;
 }
 
@@ -96,9 +94,23 @@
 }
 
 @media all and (min-width: 480px) {
+  .navbar > .logo {
+    flex-basis: 20%;
+  }
+
+  .navbar > .signin {
+    flex-basis: 20%;
+  }
 }
 
 @media all and (min-width: 768px) {
+  .navbar > .logo {
+    flex-basis: 15%;
+  }
+
+  .navbar > .signin {
+    flex-basis: 15%;
+  }
   .navbar > .menu {
     display: flex;
     flex-direction: row;
@@ -133,6 +145,13 @@
 }
 
 @media all and (min-width: 992px) {
+  .navbar > .logo {
+    flex-basis: 10%;
+  }
+
+  .navbar > .signin {
+    flex-basis: 10%;
+  }
 }
 
 @media all and (min-width: 1200px) {

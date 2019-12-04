@@ -1,8 +1,10 @@
 .main {
   margin-top: 80px;
+  margin-bottom: 60px;
+  padding: 0 2rem;
   display: grid;
   grid-template-rows: 30vh 40vh 40vh 40vh;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .main > .header {
@@ -25,39 +27,43 @@
 .main > .section-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: 
+  grid-template-rows: 15%;
+  grid-template-areas:
     "title"
     "film1"
     "film2"
     "film3"
     "film4"
     "film5"
-    "film6"
-  ;
+    "film6";
   justify-items: center;
   align-items: center;
 }
 
-.section-title {
+.section-container > .film-item {
+  padding: 0.5rem;
+}
+
+.section-container > .section-title {
   grid-area: title;
 }
 
-.film1 {
+.section-container > .film1 {
   grid-area: film1;
 }
-.film2 {
+.section-container > .film2 {
   grid-area: film2;
 }
-.film3 {
+.section-container > .film3 {
   grid-area: film3;
 }
-.film4 {
+.section-container > .film4 {
   grid-area: film4;
 }
-.film5 {
+.section-container > .film5 {
   grid-area: film5;
 }
-.film6 {
+.section-container > .film6 {
   grid-area: film6;
 }
 
@@ -83,9 +89,6 @@
       "film1 film2 film3"
       "film4 film5 film6";
   }
-  }
-
-  
 }
 
 @media all and (min-width: 1200px) {
