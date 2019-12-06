@@ -1,120 +1,365 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Viewflix</title>
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/navbar.css" />
-    <link rel="stylesheet" href="./css/novedades.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/social.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Viewflix</title>
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="./css/global.css" />
+  <link rel="stylesheet" href="./css/navbar.css" />
+  <link rel="stylesheet" href="./css/novedades.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+  <link rel="stylesheet" href="./css/social.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
 
 
-    <!-----------------------------------------
+  <!-----------------------------------------
         NAVBAR
     ------------------------------------------->
 
-    <nav class="navbar">
-      <div class="logo">
-        <a href="index.html"
-          ><img src="./img/logo_tt.png" alt="logo Viewflix"
-        /></a>
-      </div>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="./img/logo_tt.png" alt="logo Viewflix" /></a>
+    </div>
 
-      <div class="menu">
-        <input type="checkbox" id="menu-checkbox" />
-        <label for="menu-checkbox" class="menu-label"></label>
+    <div class="menu">
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox" class="menu-label"></label>
 
-        <ul class="menu-list">
-          <li><a href="#">Novedades</a></li>
-          <li><a href="#">Series</a></li>
-          <li><a href="#">Películas</a></li>
-          <li><a href="#">Favoritos</a></li>
-        </ul>
-      </div>
+      <ul class="menu-list">
+        <li><a href="#">Novedades</a></li>
+        <li><a href="#">Series</a></li>
+        <li><a href="#">Películas</a></li>
+        <li><a href="#">Favoritos</a></li>
+      </ul>
+    </div>
 
-      <div class="signin">
-        <button class="register-btn"><strong>Log Out</strong></button>
-      </div>
-    </nav>
+    <div class="signin">
+      <button class="register-btn"><strong>Log Out</strong></button>
+    </div>
+  </nav>
+
+  <!-----------------------------------------
+        HEADER
+    ------------------------------------------->
+
+  <header class="header">
+    <img src="img/el-padrino-900.jpg"
+      srcset="img/el-padrino-450.jpg 450w, img/el-padrino-650.jpg 650w, img/el-padrino-900.jpg 900w, img/el-padrino-1500.jpg 1500w"
+      alt="Banner de sección novedades">
+    <div class="main-title">
+      <h1>Novedades</h1>
+      <p>Encuentra los contenidos subidos recientemente</p>
+    </div>
+  </header>
 
 
-    <!-----------------------------------------
+  <!-----------------------------------------
         MAIN
     ------------------------------------------->
 
-    <main class="main">
+  <main class="main">
 
-      <header class="header">
-        <h1>Novedades</h1>
-        <p>Encuentra los contenidos subidos recientemente</p>
-      </header>
+<!------- SECCIÓN POPULARES ------->
 
-      <section class="populares section-container">
-        <h2 class="section-title">Populares</h2>
-        <article class="film-item film1">Film1</article>
-        <article class="film-item film2">Film2</article>
-        <article class="film-item film3">Film3</article>
-        <article class="film-item film4">Film4</article>
-        <article class="film-item film5">Film5</article>
-        <article class="film-item film6">Film6</article>  
-      </section>
+    <section class="populares section-container">
+      <h2 class="section-title"><a href="#">Populares</a> </h2>
+      <article class="film-item film1">
+        <a href="movie.html"><img src="./img/avengers-500.jpg"
+            srcset="img/avengers-250.jpg 250w, img/avengers-500.jpg 500w" alt="Película Avengers"></a>
+            <div class="film-description">
+              <div class="film-info">
+                <div class="left">Año: 2019</div>
+                <div class="right">IMdB: 7.5</div>
+              </div>
+              <a href="movie.html">
+              <h3>Avengers: Endgame</h3>
+              <p>Los Vengadores restantes deben encontrar una manera de recuperar a sus aliados para un enfrentamiento épico con Thanos, el malvado que diezmó el planeta y el universo.</p></a>
+              
+            </div>
+      </article>
+      <article class="film-item film2">
+        <a href="movie.html"><img src="./img/crepusculo-500.jpg"
+            srcset="./img/crepusculo-250.jpg 250w, ./img/crepusculo-500.jpg 500w" alt="Película Crepúsculo"> </a>
+            <div class="film-description">
+              <div class="film-info">
+                <div class="left">Año: 2011</div>
+                <div class="right">IMdB: 4.6</div>
+              </div>
+              <a href="movie.html">
+              <h3>Crepúsculo: Amanecer (I)</h3>
+              <p>El amor que Edward y Bella sienten el uno por el otro se sella con la celebración de una gran ceremonia organizada por Alice. </p></a>
+              
+            </div>
+      </article>
+      <article class="film-item film4">
+        <a href="movie.html"><img src="./img/elreyleon-500.jpg"
+            srcset="./img/elreyleon-250.jpg 250w, ./img/elreyleon-500.jpg 500w" alt="Película El Rey León"> </a>
+            <div class="film-description">
+              <div class="film-info">
+                <div class="left">Año: 2019</div>
+                <div class="right">IMdB: 6.6</div>
+              </div>
+              <a href="movie.html">
+              <h3>El Rey León</h3>
+              <p>Tras el asesinato de su padre, Simba, un joven león es apartado su reino y tendrá que descubrir con ayuda de amigos de la sabana africana el significado de la responsabilidad y la valentía.</p></a>
+              
+            </div>
+      </article>
+      <article class="film-item film3">
+        <a href="movie.html"><img src="./img/ironman-500.jpg"
+            srcset="./img/ironman-250.jpg 250w, ./img/ironman-500.jpg 500w" alt="Película Ironman 3"> </a>
+            <div class="film-description">
+              <div class="film-info">
+                <div class="left">Año: 2013</div>
+                <div class="right">IMdB: 6.1</div>
+              </div>
+              <a href="movie.html">
+              <h3>Ironman3</h3>
+              <p>El descarado y brillante Tony Stark, tras ver destruido todo su universo personal, debe encontrar y enfrentarse a un enemigo cuyo poder no conoce límites.</p></a>
+              
+            </div>
+      </article>
+      <article class="film-item film5">
+        <a href="movie.html"><img src="./img/regresion-500.jpg"
+            srcset="./img/regresion-250.jpg 250w, ./img/regresion-500.jpg 500w" alt="Película Regresión"></a>
+            <div class="film-description">
+              <div class="film-info">
+                <div class="left">Año: 2015</div>
+                <div class="right">IMdB: 5.3</div>
+              </div>
+              <a href="movie.html">
+              <h3>Regresión</h3>
+              <p>En 1990 el detective Bruce Kenner viaja a Minessota para investigar el caso de la joven Angela, que acusa a su padre, John, de haber cometido un crimen inconfesable.</p></a>
+              
+            </div>
+      </article>
+      <article class="film-item film6">
+        <a href="movie.html"><img src="./img/xmen-500.jpg" srcset="./img/xmen-250.jpg 250w, ./img/xmen-500.jpg 500w"
+            alt="Película X-Men"> </a>
+            <div class="film-description">
+              <div class="film-info">
+                <div class="left">Año: 2014</div>
+                <div class="right">IMdB: 6.9</div>
+              </div>
+              <a href="movie.html">
+              <h3>X-men: días del futuro pasado</h3>
+              <p>Los X-Men unen fuerzas con sus versiones más jóvenes con el fin de cambiar el pasado y salvar su futuro y el de la humanidad.</p></a>
+              
+            </div>
+      </article>
+    </section>
 
-      <section class="peliculas section-container">
-        <h2 class="section-title">Películas</h2>
-        <article class="film-item film1">Film1</article>
-        <article class="film-item film2">Film2</article>
-        <article class="film-item film3">Film3</article>
-        <article class="film-item film4">Film4</article>
-        <article class="film-item film5">Film5</article>
-        <article class="film-item film6">Film6</article>  
-      </section>
+<!------- SECCIÓN PELÍCULAS ------->
 
-      <section class="series section-container">
-        <h2 class="section-title">Series</h2>
-        <article class="film-item film1">Film1</article>
-        <article class="film-item film2">Film2</article>
-        <article class="film-item film3">Film3</article>
-        <article class="film-item film4">Film4</article>
-        <article class="film-item film5">Film5</article>
-        <article class="film-item film6">Film6</article>  
-      </section>
+    <section class="peliculas section-container">
+      <h2 class="section-title"><a href="#">Películas</a></h2>
+      <article class="film-item film1">
+        <a href="movie.html"><img src="./img/avengers-500.jpg"
+            srcset="img/avengers-250.jpg 250w, img/avengers-500.jpg 500w" alt="Película Avengers"></a>
+            <div class="film-description">
+              <div class="film-info">
+                <div class="left">Año: 2019</div>
+                <div class="right">IMdB: 7.5</div>
+              </div>
+              <a href="movie.html">
+              <h3>Avengers: Endgame</h3>
+              <p>Los Vengadores restantes deben encontrar una manera de recuperar a sus aliados para un enfrentamiento épico con Thanos, el malvado que diezmó el planeta y el universo.</p></a>
+              
+            </div>
+      </article>
+      <article class="film-item film2">
+        <a href="movie.html"><img src="./img/crepusculo-500.jpg"
+            srcset="./img/crepusculo-250.jpg 250w, ./img/crepusculo-500.jpg 500w" alt="Película Crepúsculo"> </a>
+            <div class="film-description">
+              <div class="film-info">
+                <div class="left">Año: 2011</div>
+                <div class="right">IMdB: 4.6</div>
+              </div>
+              <a href="movie.html">
+              <h3>Crepúsculo: Amanecer (I)</h3>
+              <p>El amor que Edward y Bella sienten el uno por el otro se sella con la celebración de una gran ceremonia organizada por Alice. </p></a>
+              
+            </div>
+      </article>
+      <article class="film-item film4">
+        <a href="movie.html"><img src="./img/elreyleon-500.jpg"
+            srcset="./img/elreyleon-250.jpg 250w, ./img/elreyleon-500.jpg 500w" alt="Película El Rey León"> </a>
+            <div class="film-description">
+              <div class="film-info">
+                <div class="left">Año: 2019</div>
+                <div class="right">IMdB: 6.6</div>
+              </div>
+              <a href="movie.html">
+              <h3>El Rey León</h3>
+              <p>Tras el asesinato de su padre, Simba, un joven león es apartado su reino y tendrá que descubrir con ayuda de amigos de la sabana africana el significado de la responsabilidad y la valentía.</p></a>
+              
+            </div>
+      </article>
+      <article class="film-item film3">
+        <a href="movie.html"><img src="./img/ironman-500.jpg"
+            srcset="./img/ironman-250.jpg 250w, ./img/ironman-500.jpg 500w" alt="Película Ironman 3"> </a>
+            <div class="film-description">
+              <div class="film-info">
+                <div class="left">Año: 2013</div>
+                <div class="right">IMdB: 6.1</div>
+              </div>
+              <a href="movie.html">
+              <h3>Ironman3</h3>
+              <p>El descarado y brillante Tony Stark, tras ver destruido todo su universo personal, debe encontrar y enfrentarse a un enemigo cuyo poder no conoce límites.</p></a>
+              
+            </div>
+      </article>
+      <article class="film-item film5">
+        <a href="movie.html"><img src="./img/regresion-500.jpg"
+            srcset="./img/regresion-250.jpg 250w, ./img/regresion-500.jpg 500w" alt="Película Regresión"></a>
+            <div class="film-description">
+              <div class="film-info">
+                <div class="left">Año: 2015</div>
+                <div class="right">IMdB: 5.3</div>
+              </div>
+              <a href="movie.html">
+              <h3>Regresión</h3>
+              <p>En 1990 el detective Bruce Kenner viaja a Minessota para investigar el caso de la joven Angela, que acusa a su padre, John, de haber cometido un crimen inconfesable.</p></a>
+              
+            </div>
+      </article>
+      <article class="film-item film6">
+        <a href="movie.html"><img src="./img/xmen-500.jpg" srcset="./img/xmen-250.jpg 250w, ./img/xmen-500.jpg 500w"
+            alt="Película X-Men"> </a>
+            <div class="film-description">
+              <div class="film-info">
+                <div class="left">Año: 2014</div>
+                <div class="right">IMdB: 6.9</div>
+              </div>
+              <a href="movie.html">
+              <h3>X-men: días del futuro pasado</h3>
+              <p>Los X-Men unen fuerzas con sus versiones más jóvenes con el fin de cambiar el pasado y salvar su futuro y el de la humanidad.</p></a>
+              
+            </div>
+      </article>
+    </section>
 
-    </main>
+
+<!------- SECCIÓN SERIES ------->
+
+    <section class="series section-container">
+      <h2 class="section-title"><a href="#">Series</a> </h2>
+      <article class="film-item film1">
+        <a href="movie.html"><img src="./img/avengers-500.jpg"
+            srcset="img/avengers-250.jpg 250w, img/avengers-500.jpg 500w" alt="Película Avengers"></a>
+            <div class="film-description">
+              <div class="film-info">
+                <div class="left">Año: 2019</div>
+                <div class="right">IMdB: 7.5</div>
+              </div>
+              <a href="movie.html">
+              <h3>Avengers: Endgame</h3>
+              <p>Los Vengadores restantes deben encontrar una manera de recuperar a sus aliados para un enfrentamiento épico con Thanos, el malvado que diezmó el planeta y el universo.</p></a>
+              
+            </div>
+      </article>
+      <article class="film-item film2">
+        <a href="movie.html"><img src="./img/crepusculo-500.jpg"
+            srcset="./img/crepusculo-250.jpg 250w, ./img/crepusculo-500.jpg 500w" alt="Película Crepúsculo"> </a>
+            <div class="film-description">
+              <div class="film-info">
+                <div class="left">Año: 2011</div>
+                <div class="right">IMdB: 4.6</div>
+              </div>
+              <a href="movie.html">
+              <h3>Crepúsculo: Amanecer (I)</h3>
+              <p>El amor que Edward y Bella sienten el uno por el otro se sella con la celebración de una gran ceremonia organizada por Alice. </p></a>
+              
+            </div>
+      </article>
+      <article class="film-item film4">
+        <a href="movie.html"><img src="./img/elreyleon-500.jpg"
+            srcset="./img/elreyleon-250.jpg 250w, ./img/elreyleon-500.jpg 500w" alt="Película El Rey León"> </a>
+            <div class="film-description">
+              <div class="film-info">
+                <div class="left">Año: 2019</div>
+                <div class="right">IMdB: 6.6</div>
+              </div>
+              <a href="movie.html">
+              <h3>El Rey León</h3>
+              <p>Tras el asesinato de su padre, Simba, un joven león es apartado su reino y tendrá que descubrir con ayuda de amigos de la sabana africana el significado de la responsabilidad y la valentía.</p></a>
+              
+            </div>
+      </article>
+      <article class="film-item film3">
+        <a href="movie.html"><img src="./img/ironman-500.jpg"
+            srcset="./img/ironman-250.jpg 250w, ./img/ironman-500.jpg 500w" alt="Película Ironman 3"> </a>
+            <div class="film-description">
+              <div class="film-info">
+                <div class="left">Año: 2013</div>
+                <div class="right">IMdB: 6.1</div>
+              </div>
+              <a href="movie.html">
+              <h3>Ironman3</h3>
+              <p>El descarado y brillante Tony Stark, tras ver destruido todo su universo personal, debe encontrar y enfrentarse a un enemigo cuyo poder no conoce límites.</p></a>
+              
+            </div>
+      </article>
+      <article class="film-item film5">
+        <a href="movie.html"><img src="./img/regresion-500.jpg"
+            srcset="./img/regresion-250.jpg 250w, ./img/regresion-500.jpg 500w" alt="Película Regresión"></a>
+            <div class="film-description">
+              <div class="film-info">
+                <div class="left">Año: 2015</div>
+                <div class="right">IMdB: 5.3</div>
+              </div>
+              <a href="movie.html">
+              <h3>Regresión</h3>
+              <p>En 1990 el detective Bruce Kenner viaja a Minessota para investigar el caso de la joven Angela, que acusa a su padre, John, de haber cometido un crimen inconfesable.</p></a>
+              
+            </div>
+      </article>
+      <article class="film-item film6">
+        <a href="movie.html"><img src="./img/xmen-500.jpg" srcset="./img/xmen-250.jpg 250w, ./img/xmen-500.jpg 500w"
+            alt="Película X-Men"> </a>
+            <div class="film-description">
+              <div class="film-info">
+                <div class="left">Año: 2014</div>
+                <div class="right">IMdB: 6.9</div>
+              </div>
+              <a href="movie.html">
+              <h3>X-men: días del futuro pasado</h3>
+              <p>Los X-Men unen fuerzas con sus versiones más jóvenes con el fin de cambiar el pasado y salvar su futuro y el de la humanidad.</p></a>
+              
+            </div>
+      </article>
+    </section>
+
+  </main>
 
 
-    <!-----------------------------------------
+  <!-----------------------------------------
         FOOTER
     ------------------------------------------->
 
-    <footer class="footer">
-        <div class="footer-col"><a href="#">Contacto</a></div>
-        <div class="footer-col"><a href="#">Aviso legal</a></div>
-        <div class="footer-col">
-            <ul class="social-list">
-                <li>
-                    <a href=""><i class="social-facebook"></a></i>
-                </li>
-                <li>
-                    <a href=""><i class="social-twitter"></a></i>
-                </li>
-                <li>
-                    <a href=""><i class="social-linkedin"></a></i>
-                </li>
-            </ul>
-        </div>
-    </footer>
-  </body>
+  <footer class="footer">
+    <div class="footer-col"><a href="#">Contacto</a></div>
+    <div class="footer-col"><a href="#">Aviso legal</a></div>
+    <div class="footer-col">
+      <ul class="social-list">
+        <li>
+          <a href=""><i class="social-facebook"></a></i>
+        </li>
+        <li>
+          <a href=""><i class="social-twitter"></a></i>
+        </li>
+        <li>
+          <a href=""><i class="social-linkedin"></a></i>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
 </html>

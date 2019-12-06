@@ -1,3 +1,7 @@
+/*************************************
+    MAIN
+*************************************/
+
 .main {
   margin-top: 80px;
   margin-bottom: 50px;
@@ -11,16 +15,27 @@
   align-items: center;
 }
 
-/* Sección WELOCOME */
+/*************************************
+    Sección Welcome
+*************************************/
 
 .main > .welcome {
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 5px;
   padding: 0.5rem 1rem;
   margin-top: 0.5rem;
+  text-align: center;
 }
 
-/* Sección LOGIN */
+.main > .welcome h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
+  animation: fadein 2s;
+}
+
+/*************************************
+    Sección Login
+*************************************/
 
 .main > .login {
   display: grid;
@@ -48,7 +63,7 @@
   display: inline-block;
   width: 65%;
   height: 2.5rem;
-  box-shadow: 1px 1px 1px #888;
+  box-shadow: 1px 1px 1px #00adb5;
 }
 
 .login-form button {
@@ -69,7 +84,9 @@
   font-weight: 700;
 }
 
-/* Sección PROMO */
+/*************************************
+    Sección Promo
+*************************************/
 
 .main > .promo {
   height: 35%;
@@ -90,7 +107,8 @@
 .main > .promo > .recently {
   display: flex;
   align-items: center;
-  overflow: scroll;
+  overflow-x: scroll;
+  overflow-y: hidden;
   padding: 0.5rem;
   gap: 1rem;
 }
@@ -99,15 +117,19 @@
   width: 250px;
   height: 141px;
   margin-right: 0.5rem;
-  background-color: grey;
   flex: 0 0 auto;
+  box-shadow: 2px 3px 5px #00adb5;
 }
 
 .main > .promo > .recently > .film img {
   width: 100%;
 }
 
-/* Media query para controlar el alto en dispositivos con altura menor a 736px */
+/*************************************
+    MEDIA QUERIES
+*************************************/
+
+/***** Media Query para altura inferior a 736px *****/
 
 @media all and (min-height: 736px) {
   .main {
@@ -123,7 +145,7 @@
   }
 }
 
-/* Media queries en función del ancho del dispositivo */
+/***** Media queries para el ancho *****/
 
 @media all and (min-width: 480px) {
   .main > .login {
