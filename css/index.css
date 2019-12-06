@@ -1,7 +1,8 @@
 .main {
   margin-top: 80px;
   margin-bottom: 50px;
-  background: url("http://lorempixel.com/400/200/nightlife") no-repeat;
+  background-image: url(../img/poster-peliculas-480.jpg);
+  background-repeat: repeat;
   background-size: cover;
   width: 100vw;
   display: flex;
@@ -102,6 +103,10 @@
   flex: 0 0 auto;
 }
 
+.main > .promo > .recently > .film img {
+  width: 100%;
+}
+
 /* Media query para controlar el alto en dispositivos con altura menor a 736px */
 
 @media all and (min-height: 736px) {
@@ -127,6 +132,10 @@
 }
 
 @media all and (min-width: 768px) {
+  .main {
+    background-image: url(../img/poster-peliculas-841.jpg);
+  }
+
   .main > .promo > .recently > .film {
     width: 350px;
     height: 197px;
@@ -137,6 +146,10 @@
 }
 
 @media all and (min-width: 992px) {
+  .main {
+    background-image: url(../img/poster-peliculas-1200.jpg);
+  }
+
   .main > .promo > .recently {
     margin-top: 1rem;
   }
@@ -146,5 +159,8 @@
   }
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1500px) {
+  .main {
+    background-image: url(../img/poster-peliculas-2787.jpg);
+  }
 }

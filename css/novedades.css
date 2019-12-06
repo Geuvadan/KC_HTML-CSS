@@ -5,6 +5,7 @@
   display: grid;
   grid-template-rows: 30vh 40vh 40vh 40vh;
   gap: 2rem;
+  min-width: 300px;
 }
 
 .main > .header {
