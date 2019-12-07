@@ -19,6 +19,13 @@
   display: none;
 }
 
+.main > .info {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #1d1d1f;
+  border-radius: 5px;
+  margin: 0 0.5rem;
+}
+
 .main > .info,
 .trailer {
   display: grid;
@@ -32,6 +39,10 @@
   display: flex;
   justify-content: space-between;
   justify-items: center;
+}
+
+.main > .info > .trailer-small {
+  display: none;
 }
 
 .main > .relacionado {
@@ -128,4 +139,16 @@
 }
 
 @media all and (min-width: 1200px) {
+  .main > .info {
+    align-content: space-around;
+    padding-bottom: 1rem;
+  }
+
+  .main > .info > .trailer-small {
+    display: inherit;
+  }
+
+  .trailer {
+    display: none;
+  }
 }
