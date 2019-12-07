@@ -1,1 +1,220 @@
-Peli!
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Viewflix</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/movie.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/social.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-----------------------------------------
+        NAVBAR
+    ------------------------------------------->
+
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html"
+          ><img src="./img/logo_tt.png" alt="logo Viewflix"
+        /></a>
+      </div>
+
+      <div class="menu">
+        <input type="checkbox" id="menu-checkbox" />
+        <label for="menu-checkbox" class="menu-label"></label>
+
+        <ul class="menu-list">
+          <li><a href="novedades.html">Novedades</a></li>
+          <li><a href="#">Series</a></li>
+          <li><a href="#">Películas</a></li>
+          <li><a href="#">Favoritos</a></li>
+          <li>
+            <form action="">
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder=" Busca un título"
+              />
+              <button type="submit">Buscar</button>
+            </form>
+          </li>
+        </ul>
+      </div>
+
+      <div class="signin">
+        <button class="register-btn"><strong>Log Out</strong></button>
+      </div>
+    </nav>
+
+    <!-----------------------------------------
+        HEADER
+    ------------------------------------------->
+
+    <!-----------------------------------------
+        MAIN
+    ------------------------------------------->
+    <main class="main">
+      <header class="header">
+        <h1>Avengers: Endgame</h1>
+      </header>
+
+      <div class="header-img">
+        <img
+          class="small"
+          src="./img/avengers-500.jpg"
+          alt="Cartel Avengers: Endgame"
+        />
+        <img
+          class="big"
+          src="./img/avengers-cartel-799.jpg"
+          alt="Cartel Avengers: Endgame"
+        />
+      </div>
+
+      <section class="info">
+        <div class="film-info">
+          <div class="imdb">
+            <strong>IMdB:</strong> <br />
+            8.5/10
+          </div>
+          <div>
+            <strong>Estreno:</strong> <br />
+            25/04/2019
+          </div>
+          <div>
+            <strong>Duración:</strong> <br />
+            3h 01min
+          </div>
+        </div>
+        <div class="film-description">
+          <h2>Sinopsis</h2>
+          <br />
+          <p>
+            Después de los eventos devastadores de 'Avengers: Infinity War', el
+            universo está en ruinas debido a las acciones de Thanos, el Titán
+            Loco.
+          </p>
+          <br />
+          <p>
+            Con la ayuda de los aliados que quedaron, los Vengadores deberán
+            reunirse una vez más para intentar deshacer sus acciones y restaurar
+            el orden en el universo de una vez por todas, sin importar cuáles
+            son las consecuencias...
+          </p>
+          <br />
+          <p>Cuarta y última entrega de la saga "Vengadores".</p>
+        </div>
+        <div class="film-data">
+          <h2>Detalles</h2>
+          <br />
+          <dl>
+            <dt><strong>Género:</strong></dt>
+            <dd>Ciencia Ficción, Fantasía, Acción</dd>
+            <dt><strong>Idiomas:</strong></dt>
+            <dd>Inglés, Español</dd>
+            <dt><strong>Subtítulos</strong></dt>
+            <dd>Inglés, Español</dd>
+            <dt><strong>País</strong></dt>
+            <dd>Estados Unidos</dd>
+            <dt><strong>Direción</strong></dt>
+            <dd>Anthony Russo, Joe Russo</dd>
+          </dl>
+        </div>
+      </section>
+
+      <section class="trailer">
+        <h2>Trailer</h2>
+        <video src="./img/trailer.mp4" controls width="100%"></video>
+      </section>
+
+      <aside class="relacionado">
+        <h2>También te puede interesar</h2>
+        <br>
+        <div class="recently">
+          
+          <div class="film">
+            <img
+              src="./img/crepusculo-500.jpg"
+              srcset="
+                ./img/crepusculo-250.jpg 250w,
+                ./img/crepusculo-500.jpg 500w
+              "
+              alt="Película Crepúsculo"
+            />
+          </div>
+          <div class="film">
+            <img
+              src="./img/elreyleon-500.jpg"
+              srcset="
+                ./img/elreyleon-250.jpg 250w,
+                ./img/elreyleon-500.jpg 500w
+              "
+              alt="Película El Rey León"
+            />
+          </div>
+          <div class="film">
+            <img
+              src="./img/ironman-500.jpg"
+              srcset="./img/ironman-250.jpg 250w, ./img/ironman-500.jpg 500w"
+              alt="Película Ironman 3"
+            />
+          </div>
+          <div class="film">
+            <img
+              src="./img/regresion-500.jpg"
+              srcset="
+                ./img/regresion-250.jpg 250w,
+                ./img/regresion-500.jpg 500w
+              "
+              alt="Película Regresión"
+            />
+          </div>
+          <div class="film">
+            <img
+              src="./img/xmen-500.jpg"
+              srcset="./img/xmen-250.jpg 250w, ./img/xmen-500.jpg 500w"
+              alt="Película X-Men"
+            />
+          </div>
+        </div>
+      </aside>
+      </aside>
+    </main>
+
+    <!-----------------------------------------
+        FOOTER
+    ------------------------------------------->
+
+    <footer class="footer">
+      <div class="footer-col"><a href="#">Contacto</a></div>
+      <div class="footer-col"><a href="#">Aviso legal</a></div>
+      <div class="footer-col">
+        <ul class="social-list">
+          <li>
+            <a href=""><i class="social-facebook"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="social-twitter"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="social-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
